@@ -1,0 +1,29 @@
+.trust-logos-pattern .wp-block-columns .wp-block-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trust-logos-pattern .wp-block-columns .wp-block-column img {
+    transition: transform 500ms;
+}
+
+.trust-logos-pattern .wp-block-columns .wp-block-column img:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width: 781px) {
+
+    /* overwite gb block for 3 col per row on .trust-logos-pattern */
+    .trust-logos-pattern .wp-block-columns .wp-block-column {
+        width: 30%;
+        flex-direction: row;
+        flex-basis: initial !important;
+    }
+
+    .trust-logos-pattern .wp-block-columns .wp-block-column img {
+        width: 100%;
+        max-width: 146px;
+    }
+
+}
